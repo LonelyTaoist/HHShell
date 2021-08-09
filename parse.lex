@@ -106,7 +106,7 @@ static int look_for_cd()
 		if (g_argv[1] == NULL || g_argv[2] != NULL) 
 		{
 			perror("command 'cd' parameter?");
-			return;
+			return 1;
 		}
             	chdir(g_argv[1]);
 		return 1;
